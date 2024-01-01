@@ -1,0 +1,195 @@
+.card{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--White);
+    display: flex;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    height: 588px;
+    width: 900px;
+}
+.nav-bar{
+    background: url("../assets/bg-sidebar-desktop.svg") no-repeat;
+    background-size: cover;
+    width: 274px;
+    height: 568px;
+    padding: 20px;
+    padding-top: 40px;
+}
+.nav-box{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    color: var(--Marine-blue);
+}
+.nav-box:not(:last-child){
+    margin-bottom: 25px;
+}
+.box-num{
+    display: inline-block;
+    font-weight: 700;
+    border: 1px solid var(--Magnolia);
+    color: var(--Magnolia);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.active-step{
+    background-color: var(--Magnolia);
+    color: var(--Marine-blue);
+}
+.box-info{
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+.step-num{
+    color: var(--Pastel-blue);
+    font-size: 12px;
+    margin-bottom: 5px;
+    display: block;
+}
+.box-info h4{
+    color: var(--Alabaster);
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.step-section{
+    padding-top: 40px;
+    padding-right: 70px;
+    padding-left: 70px;
+    position: relative;
+    height: 100%;
+    width: calc(100% - 274px);
+}
+
+.btn-container{
+    display: flex;
+    position: absolute;
+    width: calc(100% - 140px);
+    bottom: 0;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.next-submit,.confirm-submit{
+    background-color: var(--Marine-blue);
+    color: var(--Magnolia);
+    text-transform: capitalize;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.confirm-submit{
+    background-color: var(--Purplish-blue);
+}
+.back-submit{
+    border: none;
+    background-color: transparent;
+    color: var(--Cool-gray);
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 700;
+    cursor: pointer;
+}
+.form-section,.select-form,select-form-summary{
+    width: 100%;
+    position: relative;
+    height: calc(100% - 120px);
+}
+.form-section{
+    height: 100%;
+}
+.form-section .btn-container{
+    width: 100%;
+}
+@media (max-width: 990px){
+    .step-section{
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    .btn-container{
+        width: calc(100% - 80px);
+
+    }
+}
+@media (max-width: 767px){
+    .card{
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        background-color: transparent;
+        position: relative;
+    }
+    .nav-bar{
+    background: url("../assets/bg-sidebar-mobile.svg") no-repeat;
+    height: 275px;
+    width: 100%;
+    padding: 20px;
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    }
+    .box-info{
+        display: none;
+    }
+    .nav-box{
+        margin: 0 !important;
+        justify-content: center;
+        align-items: flex-start;
+        height: fit-content;
+        width: fit-content;
+    }
+    .step-section{
+        padding: 0;
+        width: 100%;
+}
+.contant,.contant-onConfirm{
+    position: absolute;
+    top: -130px;
+    padding: 30px 20px;
+    width: 500px;
+    background-color: var(--White);
+    border-radius: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.btn-container{
+    width: 100%;
+    padding: 10px;
+    background-color: var(--White);
+}
+.form-section{
+    height: 100%;
+    padding: 20px;
+}
+.form-section .btn-container{
+    width: calc(100% - 20px);
+}
+}
+@media (max-width: 767px){
+    .contant,.contant-onConfirm{
+        width: 360px;
+    }
+}
+@media (max-width: 361px){
+    
+    .contant,.contant-onConfirm{
+        width: 270px;
+    }
+}

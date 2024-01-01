@@ -1,0 +1,117 @@
+span{
+    display: block;
+}
+.select-form-summary{
+    padding: 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    background-color: var(--Alabaster);
+
+    -o-border-radius: 5px;
+}
+.selected-plan{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--Cool-gray);
+}
+.selected-plan-header{
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: var(--Marine-blue);
+}
+.selected-price{
+    color: var(--Marine-blue);
+    font-weight: 700;
+}
+.change-link{
+    color: var(--Cool-gray);
+}
+
+.add-ons-container{
+    margin: 15px 0;
+}
+.selected-add-ons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.selected-add-ons:not(:last-child){
+    margin-bottom: 15px;
+}
+.name-add-ons{
+    color: var(--Cool-gray);
+    font-size: 14px;
+}
+.price-add-ons{
+    color: var(--Marine-blue);
+    font-size: 15px;
+}
+.total-container{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.total-head{
+    text-transform: capitalize;
+    font-size: 14px;
+    color: var(--Cool-gray);
+}
+.total-price{
+    font-size: 21px;
+    color: var(--Purplish-blue);
+    font-weight: 700;
+}
+
+.contant-onConfirm{
+    height: 100%;
+}
+.on-confirm-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.confirm-icon{
+    margin-bottom: 30px;
+}
+.on-confirm-head{
+    text-transform: capitalize;
+    font-size: 31px;
+    color: var(--Marine-blue);
+}
+.on-confirm-msg{
+    text-align: center;
+    margin-top: 15px;
+    color: var(--Cool-gray);
+}
+
+@media (max-width: 767px){
+    .confirm-icon{
+        height: 60px;
+        width: 60px;
+        margin-bottom: 20px;
+    }
+    .on-confirm-head{
+        font-size: 28px;
+    }
+    .on-confirm-msg{
+        font-size: 18px;
+    }
+}
+@media (max-width: 361px){
+    .on-confirm-head{
+        font-size: 24px;
+    }
+    .on-confirm-msg{
+        font-size: 16px;
+    }
+}
